@@ -1,0 +1,16 @@
+# 下载，解压
+# /data/mongodb
+
+# 创建数据目录
+ mkdir -p /data/mongodb/data
+
+# start 
+# 默认启动占用3.2G硬盘，加入smallfiles参数后期的占用400多M
+bin/mongod --dbpath=/data/mongodb/data --smallfiles &
+
+# stop
+killall mongod
+
+
+
+
