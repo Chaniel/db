@@ -1,0 +1,11 @@
+# create db
+use mydb;
+这样就创建了一个数据库。
+post = { "title": "my blog post",
+... "content": "here is my blog post",
+... "data" : ISODate("")
+... }
+
+# 执行插入后便有了test数据库
+db.blog.insert(post)
+
