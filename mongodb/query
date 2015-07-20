@@ -1,0 +1,6 @@
+
+show dbs
+use DB
+show collections
+db.Collection.find()
+
