@@ -1,0 +1,2 @@
+# 删除foo 集合中所有文档
+db.foo.remove()
