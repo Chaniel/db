@@ -1,2 +1,5 @@
 # foo is a collection
 db.foo.insert({"bar": "baz"})
+
+# 批量插入,batchInsert接受文档数组参数
+db.foo.batchInsert({"_id": 0}, {"_id": 1}, {"_id": 2})
