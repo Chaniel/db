@@ -1,0 +1,11 @@
+
+# create collection test
+db.test.insert({"url":"www.example.com", "pageviews":0})
+
+# let pageviews's vaule increase 2.
+db.test.update({"url":"www.example.com"} , {"$inc":{"pageviews":2}} )
+
+# set pageviews's value to 2.
+db.test.update({"url":"www.example.com"} , {"$set":{"pageviews":2}} )
+
+# 
