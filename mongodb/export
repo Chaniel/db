@@ -1,2 +1,11 @@
 
+# export
 bin/mongoexport -d quokka_db -c content -o content.dat
+
+# import
+bin/mongoimport -d quokka_db -c content content.dat 
+
+
+
+# reference
+http://chenzhou123520.iteye.com/blog/1641319
