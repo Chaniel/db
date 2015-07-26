@@ -1,0 +1,2 @@
+
+bin/mongoexport -d quokka_db -c content -o content.dat
