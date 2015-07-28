@@ -1,5 +1,7 @@
-# 删除foo 集合中所有文档
+# remove删除foo 集合中所有文档,但不删除集合本身,也不删除集合元信息
 db.foo.remove()
+
+# drop速度更快,不能指定限制条件,删除集合本身, 删除集合元信息
 db.foo.drop()
 
 db.mailing.list.remove({"opt-out": true})
