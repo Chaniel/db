@@ -1,3 +1,9 @@
 
 
 cur.fetchall() 执行一次以后cur为空。
+
+# 查看表结构
+.schema articles
+
+＃查看帮助
+.help
