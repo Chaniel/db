@@ -1,0 +1,44 @@
+Database
+  Set of tables
+  one database = one application
+  Example: simple_cms_development
+  Access permissions are granted at database level
+Table
+  Set of columns and rows
+  1 table = 1 model
+  Represents a single concept(a noun)
+  Examples: products, customers, orders
+
+Column
+  Set of data of a single simple type
+  Examples: first_name, last_name, email, password
+  Columns have types: strings, integers, etc.
+
+Row
+  Single record of data
+  Example: "kevin", "Skoglund", "ks@email.com"
+  
+Field
+  Intersection of a column and a row
+
+Index
+  Data structure on a table to increase look-up speed
+  Like the index at the back of a book
+
+Foreign key
+  Table column whose values reference rows in another table
+  The foundation of relational databases
+  Example: subject_id
+  Always put indexes on foreign keys
+  
+Schema
+  The structural definition of a database
+  importing a schema creates a complete database
+  
+CRUD
+  Create
+  Read
+  Update
+  Delete
+  
+  
