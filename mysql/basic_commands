@@ -1,0 +1,10 @@
+show databases;
+create database db_name;
+use db_name;
+drop database db_name;
+
+show warnings;
+show master status;
+show slave status;
+start slave;
+stop slave;
