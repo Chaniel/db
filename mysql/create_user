@@ -1,0 +1,9 @@
+grant all privileges on db_name.* to 'username'@'localhost'
+identified by 'password';
+flush privileges;
+
+
+show grants for 'username'@'localhost';
+
+
+mysql -u simple_cms -p simple_cms_development
