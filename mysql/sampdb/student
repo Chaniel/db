@@ -1,0 +1,7 @@
+select * from score join grade_event where score.event_id = grade_event.event_id ;
+
+
+select student.name, student.student_id, grade_event.date , grade_event.event_id ,
+grade_event.category  from student inner join grade_event left join score 
+on student.student_id = score.student_id and grade_event.event_id = score.event_id 
+where score.score is NULL order by student.student_id , grade_event.event_id ;
