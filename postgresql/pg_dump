@@ -1,0 +1,3 @@
+#  -O, --no-owner               skip restoration of object ownership in
+#  -x, --no-privileges          do not dump privileges (grant/revoke)
+pg_dump -O -x   site-list_development > /tmp/site-list.sql
