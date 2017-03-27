@@ -1,0 +1,3 @@
+
+# crontab -e
+0 0 * * * pg_dump -Fc db_name > backups/db_name.bak
