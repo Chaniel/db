@@ -1,4 +1,4 @@
-# Back Up
+# Backup
 
 ## Back Up and Compress
 
