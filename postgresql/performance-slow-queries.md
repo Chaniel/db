@@ -1,4 +1,4 @@
-# Performance of PostgreSQL
+# Slow Queries - Performance of PostgreSQL
 
 ## Add pg_stat_statements Extension, monitor each query.
 
