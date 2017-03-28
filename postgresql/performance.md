@@ -38,11 +38,27 @@ create index concurrently posts_view_count_idx on posts(view_count);
 
 # if use `create index`, table will be locked. so you should use `create index concurrently`
 ```
+
+## Use Conditional Index
+```
+create index concurrently idx_posts_type_score on posts(post_type_id) where score > 100;
+
+explain analyze
+select * from posts
+where post_type_id=1
+and score > 100
+order by score desc
+limit(50)
+
+```
+
 ## Resources
 - www.westnet.com
 - http://pgtune.leopard.in.ua/
 - www.craigkerstiens.com
 - http://www.craigkerstiens.com/2013/01/10/more-on-postgres-performance/
+
+
 
 ## Conclusion
 
