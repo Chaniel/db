@@ -31,6 +31,6 @@ www.westnet.com
 http://pgtune.leopard.in.ua/
 
 ## Conclusion
-```
-the size of db more big, more hits on disk IO.
-```
+
+- the size of db more big, more hits on disk IO.
+
