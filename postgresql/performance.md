@@ -20,38 +20,30 @@ select * from pg_stat_statements;
 ```
 
 
-## Read Test(select)
-
-### Start Bench
-```
- createdb bench
- pgbench -i -s 100 bench
- pgbench -j 1 -T 10 -S -c 5 bench
+## Show Query's Execution Time
 
 ```
-
-### Result
+SELECT 
+  (total_time / 1000 / 60) as total_minutes, 
+  (total_time/calls) as average_time, 
+  query 
+FROM pg_stat_statements 
+WHERE query NOT LIKE '%pgbench%' and query NOT LIKE 'BEGIN;%' and query NOT LIKE 'END;%'
+ORDER BY 1 DESC 
+LIMIT 100;
 ```
-starting vacuum...end.
-transaction type: SELECT only
-scaling factor: 100
-query mode: simple
-number of clients: 5
-number of threads: 1
-duration: 10 s
-number of transactions actually processed: 64545
-latency average: 0.776 ms
-tps = 6444.144260 (including connections establishing)
-tps = 6445.917776 (excluding connections establishing)
-
+## Create Index 
 ```
+create index concurrently posts_view_count_idx on posts(view_count);
 
-
+# if use `create index`, table will be locked. so you should use `create index concurrently`
+```
 ## Resources
 - www.westnet.com
 - http://pgtune.leopard.in.ua/
 - www.craigkerstiens.com
 - http://www.craigkerstiens.com/2013/01/10/more-on-postgres-performance/
+
 ## Conclusion
 
 - the size of db more big, more hits on disk IO.
