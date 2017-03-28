@@ -24,3 +24,13 @@ tps = 6444.144260 (including connections establishing)
 tps = 6445.917776 (excluding connections establishing)
 
 ```
+
+
+## Resources
+www.westnet.com
+http://pgtune.leopard.in.ua/
+
+## Conclusion
+```
+the size of db more big, more hits on disk IO.
+```
