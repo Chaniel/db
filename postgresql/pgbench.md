@@ -1,4 +1,24 @@
 
+## Add pg_stat_statements Extension, monitor each query.
+
+### Create pg_stat_statements
+```
+CREATE EXTENSION pg_stat_statements;
+```
+### Edit Config File postgresql.conf
+```
+# file: postgresql.conf
+shared_preload_libraries = 'pg_stat_statements'
+
+```
+
+### Restart pg Server
+```
+select * from pg_stat_statements;
+
+```
+
+
 ## Read Test(select)
 
 ### Start Bench
@@ -29,6 +49,7 @@ tps = 6445.917776 (excluding connections establishing)
 ## Resources
 www.westnet.com
 http://pgtune.leopard.in.ua/
+craigkerstiens.com
 
 ## Conclusion
 
