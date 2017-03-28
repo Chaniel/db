@@ -50,8 +50,8 @@ tps = 6445.917776 (excluding connections establishing)
 ## Resources
 - www.westnet.com
 - http://pgtune.leopard.in.ua/
-- craigkerstiens.com
-
+- www.craigkerstiens.com
+- http://www.craigkerstiens.com/2013/01/10/more-on-postgres-performance/
 ## Conclusion
 
 - the size of db more big, more hits on disk IO.
