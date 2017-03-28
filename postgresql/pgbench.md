@@ -48,9 +48,9 @@ tps = 6445.917776 (excluding connections establishing)
 
 
 ## Resources
-www.westnet.com
-http://pgtune.leopard.in.ua/
-craigkerstiens.com
+- www.westnet.com
+- http://pgtune.leopard.in.ua/
+- craigkerstiens.com
 
 ## Conclusion
 
